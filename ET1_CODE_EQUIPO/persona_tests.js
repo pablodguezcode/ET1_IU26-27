@@ -342,7 +342,7 @@ var persona_def_tests = [
         "foto_persona_max_size_ko", "El nombre del fichero es demasiado largo: no puede superar los 15 caracteres extension incluida"],
 
             ["persona", "foto_persona", "input", 91, "Validar formato del nombre del fichero (alfabético y punto) en SEARCH", "format_name_file", "SEARCH",
-        "foto_persona_format_name_file_ko", "El nombre del fichero no es válido: solo se permiten letras y punto"],
+        "foto_persona_format_name_ko", "El nombre del fichero no es válido: solo se permiten letras y punto"],
 
             ["persona", "foto_persona", "input", 92, "Validar foto correcta en SEARCH", "valid", "SEARCH",
         true, "Foto correcta"],
@@ -542,7 +542,7 @@ var persona_pruebas = [
             ["persona", "fechaNacimiento_persona", 39, 75, "ADD", {"fechaNacimiento_persona": "30/02/2000"}, "fechaNacimiento_persona_personalized_ko"],
             ["persona", "fechaNacimiento_persona", 39, 76, "ADD", {"fechaNacimiento_persona": "31/04/2000"}, "fechaNacimiento_persona_personalized_ko"],
 
-            ["persona", "fechaNacimiento_persona", 40, 77, "ADD", {"fechaNacimiento_persona": "getdate()+1"}, "fechaNacimiento_persona_personalized_ko"],
+            ["persona", "fechaNacimiento_persona", 39, 77, "ADD", {"fechaNacimiento_persona": "getdate()+1"}, "fechaNacimiento_persona_personalized_ko"],
 
             ["persona", "fechaNacimiento_persona", 40, 78, "ADD", {"fechaNacimiento_persona": "1/1/2000"}, true],
             ["persona", "fechaNacimiento_persona", 40, 79, "ADD", {"fechaNacimiento_persona": "15/01/2000"}, true],
