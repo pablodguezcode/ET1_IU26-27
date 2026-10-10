@@ -1,0 +1,19 @@
+datosgenerales =
+{
+    Lider:
+        ["Integrante1",
+        1,
+        10],
+    Participante1:
+        ["Integrante2",
+        1,
+        11],
+    Participante2:
+        ["Integrante3",
+        1,
+        10],
+    Participante3:
+        ["Integrante4",
+        1,
+        9.20],
+}
