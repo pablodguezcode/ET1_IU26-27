@@ -85,7 +85,7 @@ Cada fichero define dos variables globales: `<entidad>_def_tests` y `<entidad>_p
 
 ### usuario
 
-- `dni`: solo `ADD` y `SEARCH`, porque es clave primaria y no se modifica. En `SEARCH` se exige el DNI completo.
+- `dni`: `ADD`, `EDIT` y `SEARCH`. Es clave primaria y se permite modificarlo, por lo que en `EDIT` se aplican las mismas restricciones que en `ADD` (`min_size`, `max_size`, `format` y letra de control). En `SEARCH` se exige el DNI completo.
 - `usuario`: alfabético **sin ñ ni acentos**, 5 a 45.
 - `contrasena`: alfabético **sin ñ ni acentos**, 8 a 45. Solo `ADD` y `EDIT`: es un dato sensible y no se usa como criterio de búsqueda. Aunque en la base de datos admite `NULL`, se trata como obligatoria porque el enunciado fija un mínimo.
 - `id_rol`: `select`, dígitos, 1 a 11.
@@ -94,7 +94,7 @@ Cada fichero define dos variables globales: `<entidad>_def_tests` y `<entidad>_p
 
 - [@Miguel Ángel](https://github.com/miguiquintas2-oss)
 - [@Federico](https://github.com/ElElectrico)
-- [@Raúl]()
+- [@Raúl](https://github.com/Raulete769)
 - [@Pablo](https://github.com/pablodguezcode)
 
 ## Aviso
